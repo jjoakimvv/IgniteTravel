@@ -1,0 +1,326 @@
+/* smalt fönster */
+@media (max-width: 1000px) 
+{
+    body {
+      margin: 0%;
+      background-color: rgb(255, 235, 197);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .site {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background-color: rgb(255, 235, 197);
+    }  
+    .box {
+      background: white;
+      color: black;
+      border-radius: 10px;
+      padding: 5%;
+      font-size: 140%;
+    }
+    .headerlogo {
+      padding: 1%;
+      width: 120px;
+    }
+    .socialmedia {
+      display: none;
+    }
+    .navbar {
+      display: none;
+    }
+    .header {
+      position: fixed;
+      width: 100%;
+      z-index: 999;
+      background-image: linear-gradient(to bottom right, rgb(89, 187, 194) , rgb(255, 255, 255));
+    }
+    .invisible-header {
+      grid-row: 1;
+      width: 100%;
+      height: 80px ;
+    }
+    .main-area {
+      margin: 0% 1.5% 0% 1.5%;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row: 2;
+    }
+    .slideshow img {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+    }
+    .maincircle {
+      width: 100px;
+      height:100px;
+      border-radius: 50%;
+      border: 1px solid rgb(194, 56, 56);
+      background-color: red;
+      z-index: 1;
+      position: absolute;
+      padding: 0%;
+      margin: 22% 20% 3% 5%;
+    }
+    .maintext {
+      color: white;
+      position: absolute;
+      padding: 4% 4% 4% 4%;
+      margin: 20% 4% 0% 0%;
+      z-index: 2;
+      text-align: center;
+      transform: rotate(-15deg);
+      font-size: 60%;
+    }
+    .article1 {
+      margin: 2% 1.5% 1.5% 3%;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row: 3;
+      background-color: white;
+      text-align: center;
+      font-size: 80%;
+      padding: 0px;
+    }
+    .article2 {
+      margin: 2% 3% 1.5% 1.5%;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row: 3;
+      background-color: white;
+      text-align: center;
+      font-size: 80%;
+      padding: 0px;
+    }
+    .article3 {
+      margin: 2% 1.5% 1.5% 3%;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row: 4;
+      background-color:white;
+      text-align: center;
+      font-size: 80%;
+      padding: 0px;
+    }
+    .article-image {
+      border-radius: 10px 10px 0px 0px; 
+    }
+    .article-text{
+      text-align: start;
+      padding: 0% 5% 0% 5%;
+    }
+    .article-button {
+      background-color:red;
+      color: white;
+      border-radius: 5px;
+      padding: 5px;
+      text-decoration: none;
+    }
+    .article-button:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .footer {
+      grid-column: 1/3;
+      grid-row: 5;
+      font-size: 80%;
+      text-align: center;
+      padding: 0px 5px 5px 5px;
+      margin-bottom: 25px;
+      height: 10px;
+     }
+}
+
+
+
+
+
+
+/* brett fönster*/
+@media (min-width: 1000px) 
+{
+    body {
+      margin: 0% 10% 10% 10%;
+      background-color: rgb(255, 235, 197);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .site {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr;
+      background-color: rgb(255, 235, 197);
+      color: #444;
+    }
+    .box {
+      background: white;
+      color: black;
+      border-radius: 5px;
+      padding: 4%;
+      font-size: 140%;
+    }
+    .headerlogo {
+      padding: 5px 5px 10px 5px;
+      width: 130px;
+      float: left;
+    }
+    .socialmedia img {
+      width: 30x;
+      height: 30px;
+      padding: 5px 5px 0px 0px;
+      float: right;
+    }
+    .topnav {
+      display: none;
+    }
+    .header {
+      display: grid;
+      grid-template-columns: 1fr 6fr 1fr;
+      grid-column: 1/4;
+      background-image: linear-gradient(to bottom right, rgb(89, 187, 194) , rgb(255, 255, 255));
+      box-shadow: 1px 1px 1px 1px  rgba(0, 0, 0, 0.2), 1px 1px 1px 1px rgba(0, 0, 0, 0.19);  
+      position: fixed;
+      margin-right: 10%;
+      margin-top: 0px;
+      border-radius: 0px 0px 5px 5px;
+      z-index: 999;
+    }
+    .invisible-header {
+      grid-column: 1/4;
+      grid-row: 1;
+      width: 100%;
+      height: 76px ;
+    }
+    .main-area {
+      grid-column: 1 / 4;
+      grid-row: 2;
+    }
+    .slideshow img {
+      border-radius: 5px;
+      width: 100%;
+      height: 100%;
+    }
+    .maincircle {
+      width: 100px;
+      height:100px;
+      border-radius: 50%;
+      border: 1px solid rgb(194, 56, 56);
+      background-color: red;
+      z-index: 1;
+      position: absolute;
+      padding: 3%;
+      margin: 25% 20% 3% 5%;
+    }
+    .maintext {
+      color: white;
+      position: absolute;
+      padding: 4% 4% 4% 4%;
+      margin: 1% 12% 15% -10%;
+      z-index: 2;
+      text-align: center;
+      transform: rotate(-15deg);
+    }
+    .article1 {
+      grid-column: 1;
+      grid-row: 3;
+      background-color: rgb(255, 235, 197);
+      text-align: center;
+      font-size: 80%;
+      padding: 0px;
+    }
+    .article2 {
+      grid-column: 2;
+      grid-row: 3;
+      background-color: rgb(255, 235, 197);
+      text-align: center;
+      font-size: 80%;
+      padding: 0px;
+    }
+    .article3 {
+      grid-column: 3;
+      grid-row: 3;
+      background-color:rgb(255, 235, 197);
+      text-align: center;
+      font-size: 80%;
+      padding: 0px;
+    }
+    .article-image {
+      border-radius: 5px 5px 5px 5px; 
+    }
+    .article-text {
+      text-align: center;
+      padding: 0% 1% 1% 1%;
+    }
+    .article-button {
+      background-color:red;
+      color: white;
+      border-radius: 5px;
+      padding: 5px;
+      text-decoration: none;
+    }
+    .article-button:hover {
+      background-color: rgb(207, 83, 83);
+      color: black;
+    }
+    .footer {
+      grid-column: 1/4;
+      grid-row: 4;
+      text-align: center;
+     }
+}
+
+
+ /* smalt fönster meny */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav a:hover {
+  background-color: rgb(43, 176, 199);
+  color: black;
+}
+.topnav a.active1 {
+  background-color: rgb(43, 176, 199);
+}
+
+
+/* brett fönster meny */
+.navbar {
+  width: 100%;
+  overflow: auto;
+}
+.navbar a {
+  float: left;
+  margin: 20px 1px 0px 1px;
+  padding: 5px 1px 5px 1px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  width: 16%;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: rgb(43, 176, 199);
+  color: black;
+  border-radius: 5px;
+}
+.navbar a.active {
+  background-color: rgb(43, 176, 199);
+  border-radius: 5px;
+}
