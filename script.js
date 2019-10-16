@@ -1,4 +1,4 @@
-var picPaths = ['./Bilder/Slider-bilder/plask.jpg','./Bilder/Slider-bilder/strand.jpg','./Bilder/Slider-ilder/karribien.jpg','./Bilder/Slider-bilder/venedig.jpg'];
+var picPaths = ['./Bilder/Slider-bilder/plask.jpg','./Bilder/Slider-bilder/strand.jpg','./Bilder/Slider-bilder/karribien.jpg','./Bilder/Slider-bilder/venedig.jpg'];
 // An index to track the contender image 
 var imageIndex = 0;
 var SlideBilder; 
