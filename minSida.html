@@ -7,6 +7,7 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>Ignite Travel - Min sida</title>
  <link rel="stylesheet" href="site.css">
+ <link rel="stylesheet" href="minsida.css">
  <script src="script.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -18,11 +19,11 @@
 
       <header class="header">
 
-        <a href="index.html"><img class="headerlogo" src="./Bilder/ignite_logo.png"  alt="ignite_logo"></a>
+        <a href="startsida.html"><img class="headerlogo" src="./Bilder/ignite_logo.png"  alt="ignite_logo"></a>
     
         <!-- Meny brett fönster -->
         <div class="navbar">
-          <a href="index.html">Startsida</a> 
+          <a href="startsida.html">Startsida</a> 
           <a href="resmal.html">  Resmål </a> 
           <a href="hotell.html">  Hotell </a> 
           <a class="active" href="#"> Min sida</a>
@@ -40,7 +41,7 @@
         <div class="topnav">
     
           <div id="myLinks">
-              <a href="index.html">Startsida</a>
+              <a href="startsida.html">Startsida</a>
               <a href="resmal.html">Resmål</a>
               <a href="hotell.html">Hotell</a>
               <a class="active1" href="#">Min sida</a>
@@ -56,16 +57,89 @@
         
       </header>
         
-        <main class="box main-area">
-            <article>
-                <h1>Min sida</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis justo et elit consequat pretium. Donec nec pretium nunc, auctor porttitor est. In in dui tempor, pharetra velit at, ultrices risus. Morbi cursus tristique massa, at sodales ex vestibulum ut. Curabitur pretium facilisis purus, at sodales ex auctor quis. Sed pellentesque nisl sit amet augue auctor tincidunt. Aenean sit amet massa pellentesque, ultricies elit eget, fringilla sapien.
-  
-                Quisque efficitur neque sem, ut vestibulum purus venenatis sed. Pellentesque ac orci auctor nisl fermentum euismod. Donec in dui sit amet libero convallis molestie vitae eget dolor. Curabitur id sagittis odio. In sagittis, dui tristique elementum fringilla, nulla turpis gravida nulla, vestibulum facilisis nulla libero eget quam. Sed odio augue, convallis et varius et, laoreet eget enim. Nulla lorem ipsum, maximus ut efficitur quis, lobortis at augue. Sed pharetra mauris mauris, quis eleifend magna dignissim eu. Ut rutrum urna quis orci pharetra, non congue massa lobortis. Aliquam feugiat porta magna, ac lacinia turpis feugiat sit amet. Maecenas mattis odio varius elit lacinia, eu dapibus nisl accumsan. Vestibulum purus metus, venenatis vitae ex et, venenatis tempor mauris. Nulla sagittis libero ut faucibus auctor. Integer egestas nisi dolor, id commodo tellus iaculis bibendum.
+        <main class="minSida-box minSida-main-area minSida-grid">
+           <div class="logIn-box">
+             <nav class="minSida-nav" >
+                <div class="tab">
+                    <button  class="tablinks" onclick="loginOrCreate(event, 'Logga in')" id="defaultOpen">Logga in</button>
+                    <button  class="tablinks" onclick="loginOrCreate(event, 'Skapa konto')">Skapa konto</button>
                     
-                Mauris vestibulum vel lacus sed imperdiet. Quisque feugiat ante non risus porta malesuada. In sed maximus nisl. Donec ac velit venenatis, cursus ligula eget, placerat nisi. Integer sit amet metus congue eros cursus accumsan id sed arcu. Proin sodales tincidunt augue, ac efficitur erat dictum blandit. Fusce quam sapien, venenatis eu mauris placerat, viverra dapibus arcu.
-                </p>
-            </article>
+                  </div>
+             </nav>
+
+             <div class="inputForms">
+               <div id="Logga in" class="tabcontent">
+                  <input class="inputwindow" type="email" name="email" placeholder="E-postadress">
+                  <br>
+                  <br>
+                  <input class="inputwindow" type="password" name="lastname" placeholder="Lösenord">
+                  <br><br>
+                  <input type="checkbox" name="rememberPw"> Kom ihåg mig 
+                  <br><br>
+                  <input class="loginKnapp" type="submit" value="Logga in">
+                  
+                  <br>
+              </div>
+                  
+                  <div id="Skapa konto" class="tabcontent">
+                      <input class="inputwindow" type="email" name="email" placeholder="E-postadress">
+                      <br>
+                      <br>
+                      <input class="inputwindow" type="password" name="lastname" placeholder="Välj lösenord">
+                      <br><br>
+                      <input type="checkbox" name="rememberPw"> Kom ihåg mig 
+                      <br><br>
+                      <input class="loginKnapp" type="submit" value="Skapa konto">
+                      
+                      <br> 
+                  </div>
+                  
+                  
+                  
+                  <script>
+                  function loginOrCreate(evt, login) {
+                    var i, tabcontent, tablinks;
+                   
+
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                      tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                      tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(login).style.display = "block";
+                    evt.currentTarget.className += " active";
+                  }
+                  document.getElementById("defaultOpen").click();
+                  </script>
+
+             </div>
+
+              
+
+
+           </div>
+
+           <div>
+              <div class="bildTextBox">
+                <div class="bildText">
+                    
+                    <ul style="list-style-type: none;">
+                     <h3>Med ett konto kan du</h3>
+                      <li>Spara & jämföra hotell</li><br>
+                      <li>Hantera dina bokningar</li><br>
+                      <li>Göra uppgraderingar & tillval</li><br>
+                      <li>Få rekommendationer för dig</li>
+                    </ul>                    
+                </div>  
+             </div>
+             <img class="loginBild" src="./Bilder/MinSidaBild/MinSidaBild.jpg" alt="airView" style="width: 100%;">
+           </div>
+                
+                
+           
           </main>
 
           <footer class="footer">

@@ -1,0 +1,160 @@
+/* brett fönster*/
+@media (min-width: 800px) 
+{
+    
+    }
+    .minSida-grid {
+      display: grid;
+      
+      grid-template-columns: 1fr 1fr;
+      background-color: rgb(255, 245, 225);
+      color: #444;
+    
+    }
+    .minSida-box {
+      background: white;
+      color: black;
+      border-radius: 5px;
+      width: 800px;
+      
+      
+    }
+    .minSida-main-area {
+        grid-column: 1 / 4;
+        grid-row: 2;
+        margin: auto;
+        
+    
+        
+    }
+    .minSida-nav{
+        border-radius: 5px 0px 0px 5px ;
+        
+    }
+    .logIn-box{
+        display: grid;        
+        grid-template-rows: 1fr 4fr;        
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px 0px 0px 5px ;
+        font-size: 13px;
+        
+        
+    }
+    .inputwindow{
+        width: 95%; 
+        height:40px;
+        border-radius:5px; 
+        padding-left: 3%;        
+        
+
+    
+    }
+   
+
+    .loginBild{
+        border-radius: 0px 5px 5px 0px ;
+        vertical-align: middle;
+
+    }
+    .bildTextBox {
+      
+     margin: 50px;
+      z-index: 1;
+      position: absolute;
+     width: 300px;
+     
+      border-radius:  5px;
+      
+      background-color:rgba(0, 0, 0, 0.3);
+    }
+    .bildText{
+      color: white;
+      font-size: 15px;
+      margin: auto;
+      padding: 5px 1px;
+      
+    }
+
+    .inputForms{
+        padding: 10px;
+
+    }
+
+    .loginKnapp{
+        background-color: rgb(89, 187, 194);
+  border: none;
+  color: white;
+ 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 98%; 
+  height:40px;
+  border-radius:5px; 
+  
+  margin: 4px 2px;
+  cursor: pointer;
+  
+    }
+
+    /* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #d8d8d8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 5px 0px 0px 0px ;
+  }
+ 
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;    
+    border: none;
+    outline: none;
+    cursor: pointer;    
+    transition: 0.3s;
+    font-size: 15px;
+    height: 50px;
+    width: 100%;
+    
+  
+  }
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: rgb(240, 251, 255);
+  }
+  
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    
+    border-top: none;
+  }
+  @media (max-width: 800px)
+  {
+
+    .minSida-grid {
+        display: grid;
+        
+        grid-template-columns: 1fr;
+        background-color: rgb(255, 245, 225);
+        color: #444;
+    }
+    .loginBild, .bildText{
+        display: none;
+    }
+    .minSida-box {
+        
+        width: 100%;
+        
+      }
+
+
+  }
