@@ -177,7 +177,7 @@
       background-image: linear-gradient(to bottom right, rgb(89, 187, 194) , rgb(255, 255, 255));
       box-shadow: 1px 1px 1px 1px  rgba(0, 0, 0, 0.2), 1px 1px 1px 1px rgba(0, 0, 0, 0.19);  
       position: fixed;
-      margin-right: 10%;
+      width: 80%;
       margin-top: 0px;
       border-radius: 0px 0px 5px 5px;
       z-index: 999;
@@ -254,10 +254,12 @@
       border-radius: 5px;
       padding: 5px;
       text-decoration: none;
+      transition: transform .2s; 
     }
     .article-button:hover {
       background-color: rgb(207, 83, 83);
       color: black;
+      transform: scale(1.03);
     }
     .footer {
       grid-column: 1/4;

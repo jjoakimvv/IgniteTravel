@@ -4,9 +4,101 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <title>index</title>
+ <title>Ignite Travel</title>
+ <link rel="stylesheet" href="site.css">
+ <script src="script.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
- <a href="startsida.html"><img src="./Bilder/ignite_logo.png" alt="ignite_logo_link"></a>
+  
+  <div class="site">
+
+    <header class="invisible-header"></header>
+
+    <header class="header">
+
+      <a href="index.html"><img class="headerlogo" src="./Bilder/ignite_logo.png"  alt="ignite_logo"></a>
+
+      <!-- Meny brett fönster -->
+      <div class="navbar">
+        <a class="active" href="#">Startsida</a> 
+        <a href="resmal.html">  Resmål </a> 
+        <a href="hotell.html">  Hotell </a> 
+        <a href="minSida.html"> Min sida</a>
+        <a href="omOss.html">  Om oss </a> 
+        <a href="kontakt.html"> Kontakt </a>
+      </div>
+
+      <!-- Meny smalt fönster -->
+      <div class="topnav">
+  
+        <div id="myLinks">
+            <a class="active1" href="#">Startsida</a>
+            <a href="resmal.html">Resmål</a>
+            <a href="hotell.html">Hotell</a>
+            <a href="minSida.html">Min sida</a>
+            <a href="omOss.html">Om Oss</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="https://www.facebook.com" target="_blank" ><img src="./Bilder/Social media/facebook_logo.png" alt="facebook_logo" width="20px"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="./Bilder/Social media/twitter_logo.png" alt="twitter_logo" width="20px"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="./Bilder/Social media/instagram_logo.png" alt="instagram_logo" width="20px"></a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      </div>
+
+      <div class="socialmedia">
+       <a href="https://www.facebook.com" target="_blank" ><img src="./Bilder/Social media/facebook_logo.png" alt="facebook_logo"></a>
+       <a href="https://www.twitter.com" target="_blank"><img  src="./Bilder/Social media/twitter_logo.png" alt="twitter_logo"></a>
+       <a href="https://www.instagram.com" target="_blank"><img src="./Bilder/Social media/instagram_logo.png" alt="instagram_logo"></a>
+      </div>
+      
+    </header>
+    
+       
+    <main class="main-area slideshow">
+
+      <div class="maincircle">
+              <p class="maintext"><b>VINTERFYNDA!</b><br>Resor i november & december</p> 
+      </div>
+        
+        <img id="bildbyte" src="./Bilder/Slider-bilder/karribien.jpg" alt=""> 
+        
+    </main>
+    
+    <article class="box article1">
+
+      <img class="article-image" src="./Bilder/Kanot.jpg" width="100%" alt="kanot_img">
+      <br>
+      <br>
+      <a class="article-button" href="resmal.html">Boka kanotresa</a>
+      <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum necessitatibus nobis ad incidunt ipsum omnis dicta, iure ratione veniam minima sapiente error maxime quia quam sit dolore, pariatur debitis et.</p>
+    </article>
+
+    <article class="box article2">
+
+      <img class="article-image" src="./Bilder/Vinter.jpg" width="100%" alt="vinter_img">
+      <br>
+      <br>
+      <a class="article-button" href="resmal.html">Boka vinterresa</a>
+      <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis doloribus iste iusto atque in quisquam, ab nostrum. Blanditiis, laudantium aut enim eum fugiat ea laboriosam vel incidunt provident deserunt!</p>
+    </article>
+
+    <article class="box article3">
+
+      <img class="article-image" src="./Bilder/Backpack.jpg" width="100%" alt="backpack_img">
+      <br>
+      <br>
+      <a class="article-button" href="resmal.html">Boka backpackingresa</a>
+      <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quaerat voluptates, veniam dignissimos qui numquam illo. Rem est consequatur itaque quae, sed assumenda tenetur dolores accusantium voluptatibus officiis nulla dolorum?</p>
+    </article>
+
+    <footer class="footer">
+      <p>Copyright © Ignite Travel AB 2018-2019</p>
+    </footer>
+    
+  </div>
+
 </body>
 </html>
