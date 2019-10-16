@@ -1,4 +1,4 @@
-/* brett fönster*/
+/* brett fÃ¶nster*/
 @media (min-width: 1000px){
 
 h1{
@@ -57,7 +57,7 @@ p{
 
 }
 
-/* smalt fönster */
+/* smalt fÃ¶nster */
 @media (max-width: 800px){
     h1 ,p{ 
         font-family: Verdana, Geneva, Tahoma, sans-serif;
