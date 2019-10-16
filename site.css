@@ -10,7 +10,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       background-color: rgb(255, 235, 197);
-    }  
+    }
     .box {
       background: white;
       color: black;
