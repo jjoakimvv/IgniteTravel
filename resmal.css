@@ -105,14 +105,14 @@
   text-align: right;
   padding: 0% 3% 3% 3%;
   grid-column: 2;
-  font-size: 80%;
+  font-size: 70%;
  }
  .resa-text3 {
   text-align: right;
   padding: 0% 10% 3% 3%;
   grid-column: 3;
   color: red;
-  font-size: 80%;
+  font-size: 70%;
  }
  
  .resa-button {
@@ -228,17 +228,20 @@
   text-align: left;
   padding: 0% 3% 3% 3%;
   grid-column: 1;
+  font-size: 80%;
  }
  .resa-text2 {
   text-align: right;
   padding: 0% 3% 3% 3%;
   grid-column: 2;
+  font-size: 70%;
  }
  .resa-text3 {
   text-align: right;
   padding: 0% 10% 3% 3%;
   grid-column: 3;
   color: red;
+  font-size: 90%;
  }
  .resa-button {
   background-color:red;
