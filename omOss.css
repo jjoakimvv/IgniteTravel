@@ -1,0 +1,138 @@
+/* brett fönster*/
+@media (min-width: 1000px){
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+  .site1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(255, 235, 197);
+    color: #444;
+  }
+.omoss-artikel1{
+    margin: 10px 5px 5px 0px;
+        grid-column: 1;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        text-align: center;
+        background-color: white;
+        padding: 0px;
+    }
+       
+.omoss-artikel2{
+    margin: 10px 0px 5px 5px;
+    grid-column: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    padding: 0px;
+    background-color: rgb(43, 176, 199);
+    color:white;
+}
+
+
+
+.omoss-artikel3{
+    margin: 5px 0px 10px 0px;
+    grid-column: 1/4;
+    grid-row: 4;
+    text-align: center;
+    background-color:#35424a;
+    color: white;
+    padding: 3%;
+}
+
+
+.artikel-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+p{
+    text-align: left;
+    padding: 5%;
+}
+.person{
+    width: 80%;
+}
+
+.footer-omOss {
+    width: 100%;
+    grid-row: 5;
+    text-align: center;
+   }
+
+}
+
+/* smalt fönster */
+@media (max-width: 1000px){
+    h1 ,p{ 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 70%;  
+    }
+      .site1 {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 2fr 1fr;
+        background-color: rgb(255, 235, 197);
+        color: #444;
+      }
+    .omoss-artikel1{
+            margin: 5px 5px 5px 10px;
+            grid-column: 1;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            text-align: center;
+            background-color: white;
+            padding: 0px;
+            font-size: 100%;
+           
+        }
+           
+    .omoss-artikel2{
+        margin: 5px 10px 5px 5px;
+        grid-column: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        text-align: center;
+        padding: 0px;
+        font-size: 100%;
+        background-color: rgb(43, 176, 199) ;
+        color:white;
+    }
+    
+    
+    .omoss-artikel3{
+        margin: 5px 10px 5px 10px;
+        grid-column: 1/4;
+        grid-row: 4;
+        text-align: center;
+        background-color: #444;
+        color: white;
+        padding: 3%;
+        font-size: 100%;
+    }
+    
+    
+    .artikel-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    
+    p{
+        text-align: left;
+        padding: 5%;
+    }
+
+    .person{
+        width: 50%;
+    }
+    .footer-omOss {
+        width: 100%;
+        grid-row: 5;
+        text-align: center;
+       }
+}
