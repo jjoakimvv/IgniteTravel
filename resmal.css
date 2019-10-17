@@ -5,7 +5,7 @@
   color: black;
   border-radius: 10px;
   padding: 5%;
-  font-size: 140%;
+ 
  }
  .article-grid{
   display: grid;
@@ -140,7 +140,6 @@
   color: black;
   border-radius: 5px;
   padding: 4%;
-  font-size: 140%;
   transition: transform .2s; 
  }
  .box-resa:hover {
