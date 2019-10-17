@@ -8,7 +8,7 @@ h1{
     display: grid;
     grid-template-columns: 2fr 1fr;
     background-color: rgb(255, 235, 197);
-    color: #444;
+    color: rgb(0, 0, 0);
   }
 .omoss-artikel1{
     margin: 10px 5px 5px 0px;
@@ -16,7 +16,7 @@ h1{
         grid-row-start: 2;
         grid-row-end: 4;
         text-align: center;
-        background-color: white;
+        background-color:white;
         padding: 0px;
     }
        
@@ -27,8 +27,8 @@ h1{
     grid-row-end: 3;
     text-align: center;
     padding: 0px;
-    background-color: rgb(43, 176, 199);
-    color:white;
+    background-image: linear-gradient(to top right, rgb(89, 187, 194) , rgb(255, 255, 255));
+    color:black
 }
 
 
@@ -53,15 +53,21 @@ h1{
 p{
     text-align: left;
     padding: 5%;
+    font-size: 80%;
 }
 .person{
     width: 80%;
 }
 
 .footer-omOss {
-    width: 100%;
+    grid-column: 1/4;
     grid-row: 5;
     text-align: center;
+   }
+
+   .footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
    }
 
 }
@@ -70,14 +76,14 @@ p{
 @media (max-width: 1000px){
     h1 ,p{ 
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 70%;  
+        font-size: 80%;  
     }
       .site1 {
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 2fr 1fr;
         background-color: rgb(255, 235, 197);
-        color: #444;
+        color: rgb(0, 0, 0);
       }
     .omoss-artikel1{
             margin: 5px 5px 5px 10px;
@@ -87,7 +93,7 @@ p{
             text-align: center;
             background-color: white;
             padding: 0px;
-            font-size: 100%;
+            font-size: 80%;
            
         }
            
@@ -98,9 +104,9 @@ p{
         grid-row-end: 3;
         text-align: center;
         padding: 0px;
-        font-size: 100%;
-        background-color: rgb(43, 176, 199) ;
-        color:white;
+        font-size: 80%;
+        background-image: linear-gradient(to top right, rgb(89, 187, 194) , rgb(255, 255, 255));
+        color: black;
     }
     
     
@@ -112,7 +118,7 @@ p{
         background-color: #444;
         color: white;
         padding: 3%;
-        font-size: 100%;
+        font-size: 80%;
     }
     
     
@@ -125,14 +131,20 @@ p{
     p{
         text-align: left;
         padding: 5%;
+        font-size: 80%;
     }
 
     .person{
         width: 50%;
     }
     .footer-omOss {
-        width: 100%;
+        grid-column: 1/4;
         grid-row: 5;
         text-align: center;
+       }
+
+       .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
        }
 }
