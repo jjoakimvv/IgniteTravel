@@ -1,9 +1,5 @@
 /* brett fönster*/
 @media (min-width: 1000px){
-
-h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
-}
   .site1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -30,17 +26,16 @@ h1{
     background-image: linear-gradient(to top right, rgb(89, 187, 194) , rgb(255, 255, 255));
     color:black
 }
-
-
-
 .omoss-artikel3{
     margin: 5px 0px 10px 0px;
     grid-column: 1/4;
     grid-row: 4;
-    text-align: center;
     background-color:#35424a;
     color: white;
     padding: 3%;
+}
+#artikel4{
+    display: none;
 }
 
 
@@ -74,72 +69,66 @@ p{
 
 /* smalt fönster */
 @media (max-width: 1000px){
-    h1 ,p{ 
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 80%;  
+    h1 { 
+        font-size: 100%;  
     }
-      .site1 {
+    .site1 {
         display: grid;
         grid-gap: 10px;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr;
         background-color: rgb(255, 235, 197);
         color: rgb(0, 0, 0);
-      }
+    }
     .omoss-artikel1{
-            margin: 5px 5px 5px 10px;
-            grid-column: 1;
-            grid-row-start: 2;
-            grid-row-end: 4;
-            text-align: center;
-            background-color: white;
-            padding: 0px;
-            font-size: 80%;
-           
-        }
-           
-    .omoss-artikel2{
-        margin: 5px 10px 5px 5px;
-        grid-column: 2;
+        margin: 10px 5px 5px 10px;
+        grid-column: 1/2;
         grid-row-start: 2;
         grid-row-end: 3;
+        text-align: center;
+        background-color: white;
+        padding: 0px;
+        font-size: 80%;
+    }     
+    .omoss-artikel2{
+        margin: 5px 5px 5px 10px;
+        grid-column: 1/2;
+        grid-row-start: 3;
+        grid-row-end: 4;
         text-align: center;
         padding: 0px;
         font-size: 80%;
         background-image: linear-gradient(to top right, rgb(89, 187, 194) , rgb(255, 255, 255));
         color: black;
     }
-    
-    
-    .omoss-artikel3{
-        margin: 5px 10px 5px 10px;
-        grid-column: 1/4;
-        grid-row: 4;
+    #artikel3 {
+        display: none;
+    }
+    .omoss-artikel4{
+        margin: 0px 5px 10px 10px;
+        grid-column: 1/2;
+        grid-row: 5;
         text-align: center;
         background-color: #444;
         color: white;
-        padding: 3%;
+        padding: 1%;
         font-size: 80%;
     }
-    
-    
-    .artikel-grid{
+    .artikel-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
-    
-    p{
+    p {
         text-align: left;
-        padding: 5%;
+        padding: 1% 5% 1% 5%;
         font-size: 80%;
     }
 
     .person{
-        width: 50%;
+        width: 70%;
     }
     .footer-omOss {
         grid-column: 1/4;
-        grid-row: 5;
+        grid-row: 6;
         text-align: center;
        }
 
