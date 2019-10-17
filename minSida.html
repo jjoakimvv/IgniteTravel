@@ -47,9 +47,9 @@
               <a class="active1" href="#">Min sida</a>
               <a href="omOss.html">Om oss</a>
               <a href="kontakt.html">Kontakt</a>
-              <a href="https://www.facebook.com" target="_blank" ><img src="./Bilder/Social-media/facebook_logo.png" alt="facebook_logo" width="20px"></a>
-              <a href="https://www.twitter.com" target="_blank"><img src="./Bilder/Social-media/twitter_logo.png" alt="twitter_logo" width="20px"></a>
-              <a href="https://www.instagram.com" target="_blank"><img src="./Bilder/Social-media/instagram_logo.png" alt="instagram_logo" width="20px"></a>
+              <a href="https://www.facebook.com" target="_blank" ><img src="./Bilder/Social-media/facebook_logo.png" alt="facebook_logo" style="width:20px"></a>
+              <a href="https://www.twitter.com" target="_blank"><img src="./Bilder/Social-media/twitter_logo.png" alt="twitter_logo" style="width:20px"></a>
+              <a href="https://www.instagram.com" target="_blank"><img src="./Bilder/Social-media/instagram_logo.png" alt="instagram_logo" style="width:20px"></a>
          </div>
     
          <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
@@ -61,14 +61,13 @@
            <div class="logIn-box">
              <nav class="minSida-nav" >
                 <div class="tab">
-                    <button  class="tablinks" onclick="loginOrCreate(event, 'Logga in')" id="defaultOpen">Logga in</button>
-                    <button  class="tablinks" onclick="loginOrCreate(event, 'Skapa konto')">Skapa konto</button>
-                    
+                    <button  class="tablinks" onclick="loginOrCreate(event, 'Loggain')" id="defaultOpen">Logga in</button>
+                    <button  class="tablinks" onclick="loginOrCreate(event, 'Skapakonto')">Skapa konto</button>                    
                   </div>
              </nav>
 
              <div class="inputForms">
-               <div id="Logga in" class="tabcontent">
+               <div id="Loggain" class="tabcontent">
                   <input class="inputwindow" type="email" name="email" placeholder="E-postadress">
                   <br>
                   <br>
@@ -76,12 +75,11 @@
                   <br><br>
                   <input type="checkbox" name="rememberPw"> Kom ihåg mig 
                   <br><br>
-                  <input class="loginKnapp" type="submit" value="Logga in">
-                  
+                  <input class="loginKnapp" type="submit" value="Logga in">                  
                   <br>
               </div>
                   
-                  <div id="Skapa konto" class="tabcontent">
+                  <div id="Skapakonto" class="tabcontent">
                       <input class="inputwindow" type="email" name="email" placeholder="E-postadress">
                       <br>
                       <br>
@@ -89,13 +87,10 @@
                       <br><br>
                       <input type="checkbox" name="rememberPw"> Kom ihåg mig 
                       <br><br>
-                      <input class="loginKnapp" type="submit" value="Skapa konto">
-                      
+                      <input class="loginKnapp" type="submit" value="Skapa konto">                    
                       <br> 
                   </div>
-                  
-                  
-                  
+                        
                   <script>
                   function loginOrCreate(evt, login) {
                     var i, tabcontent, tablinks;
@@ -125,12 +120,11 @@
            <div>
               <div class="bildTextBox">
                 <div class="bildText">
-                    
-                    <ul style="list-style-type: none;">
-                     <h3>Med ett konto kan du</h3>
-                      <li>Spara & jämföra hotell</li><br>
-                      <li>Hantera dina bokningar</li><br>
-                      <li>Göra uppgraderingar & tillval</li><br>
+                    <h3 style="padding-left: 40px;">Med ett konto kan du</h3>
+                    <ul class="bildTextLista">                     
+                      <li>Spara & jämföra hotell</li>
+                      <li>Hantera dina bokningar</li>
+                      <li>Göra uppgraderingar & tillval</li>
                       <li>Få rekommendationer för dig</li>
                     </ul>                    
                 </div>  
