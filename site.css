@@ -270,6 +270,10 @@
      }
 }
 
+.wireframe {
+  text-decoration: none;
+}
+
 
  /* smalt fönster meny */
 .topnav {
