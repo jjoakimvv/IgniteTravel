@@ -1,61 +1,45 @@
 /* brett fönster*/
 @media (min-width: 800px) 
 {
-    
     }
     .minSida-grid {
       display: grid;
-      
       grid-template-columns: 1fr 1fr;
       background-color: rgb(255, 245, 225);
       color: #444;
-    
     }
     .minSida-box {
       background: white;
       color: black;
       border-radius: 5px;
-      width: 800px;
-      
-      
+      width: 800px;  
     }
     .minSida-main-area {
         grid-column: 1 / 4;
         grid-row: 2;
-        margin: auto;
-        
-    
-        
+        margin: auto;    
     }
     .minSida-nav{
         border-radius: 5px 0px 0px 5px ;
-        
     }
     .logIn-box{
         display: grid;        
         grid-template-rows: 1fr 4fr;        
         background-color: rgb(255, 255, 255);
         border-radius: 5px 0px 0px 5px ;
-        font-size: 80%;
-        
-        
+        font-size: 80%; 
     }
     .inputwindow{
         width: 95%; 
         height:40px;
         border-radius:5px; 
-        padding-left: 3%;        
-            
+        padding-left: 3%;            
     }
-   
-
     .loginBild{
         border-radius: 0px 5px 5px 0px ;
         vertical-align: middle;
-
     }
     .bildTextBox {
-      
       margin: 50px;
       z-index: 1;
       position: absolute;
@@ -68,43 +52,35 @@
       font-size: 80%;
       margin: auto;
       padding: 5px 1px 0px 15px;
-      
     }
     .bildTextLista{
       line-height: 40px;
       list-style-type: none;
-      
     }
-
     .inputForms{
-        padding: 10px;
-
+      padding: 10px;
     }
-
     .loginKnapp{
-  background-color: rgb(89, 187, 194);
-  border: none;
-  color: white; 
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  width: 98%; 
-  height:40px;
-  border-radius:5px;   
-  margin: 4px 2px;
-  cursor: pointer;
-  
+      background-color: rgb(89, 187, 194);
+      border: none;
+      color: white; 
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      width: 98%; 
+      height:40px;
+      border-radius:5px;   
+      margin: 4px 2px;
+      cursor: pointer;
     }
-
-.tab {
+    .tab {
     overflow: hidden;
     background-color: #d8d8d8;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 5px 0px 0px 0px ;
-  }
- 
-  .tab button {
+    }
+    .tab button {
     background-color: inherit;    
     border: none;
     outline: none;
@@ -112,9 +88,7 @@
     transition: 0.3s;   
     height: 50px;
     width: 100%;
-    
-  
-  }
+   }
   
   .tab button:hover {
     background-color: rgb(147, 222, 228);
@@ -127,17 +101,14 @@
   .tabcontent {
     display: none;
     padding: 6px 12px;
-    
     border-top: none;
   }
 
   /* litet fönster */
   @media (max-width: 800px)
   {
-
     .minSida-grid {
         display: grid;
-        
         grid-template-columns: 1fr;
         background-color: rgb(255, 245, 225);
         color: #444;
@@ -146,10 +117,6 @@
         display: none;
     }
     .minSida-box {
-        
         width: 100%;
-        
       }
-
-
   }
