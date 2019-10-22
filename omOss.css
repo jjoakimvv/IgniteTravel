@@ -77,7 +77,7 @@
         grid-row: 2;
         text-align: center;
         background-color: white;
-        padding: 5%;
+        padding: 3%;
         font-size: 80%;
     }     
     .omoss-artikel2{
@@ -85,7 +85,7 @@
         grid-column: 1/4;
         grid-row: 3;
         text-align: center;
-        padding: 5%;
+        padding: 3%;
         font-size: 80%;
         background-image: linear-gradient(to top right, rgb(89, 187, 194) , rgb(255, 255, 255));
         color: black;
@@ -94,7 +94,7 @@
         display: none;
     }
     .omoss-artikel4{
-        margin: 0.5% 2% 2% 0%;
+        margin: 0.5% 2% 0% 2%;
         grid-column: 1/4;
         grid-row: 4;
         text-align: center;
