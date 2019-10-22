@@ -8,12 +8,17 @@
  }
  .article-grid{
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+ }
+ .article-header {
+ grid-column: 1/3;
+ grid-row: 2;
+ text-align: center;
  }
  .article-resa1 {
   margin: 2% 1.5% 1.5% 3%;
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 3;
   background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: 80%;
@@ -22,7 +27,7 @@
  .article-resa2 {
   margin: 2% 3% 1.5% 1.5%;
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 3;
   background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: 80%;
@@ -31,7 +36,7 @@
  .article-resa3 {
   margin: 2% 1.5% 1.5% 3%;
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 4;
   background-color:rgb(255, 255, 255);
   text-align: center;
   font-size: 80%;
@@ -40,7 +45,7 @@
  .article-resa4 {
   margin: 2% 3% 1.5% 1.5%;
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 4;
   background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: 80%;
@@ -49,7 +54,7 @@
  .article-resa5 {
   margin: 2% 1.5% 1.5% 3%;
   grid-column: 1;
-  grid-row: 4;
+  grid-row: 5;
   background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: 80%;
@@ -58,7 +63,7 @@
  .article-resa6 {
   margin: 2% 3% 1.5% 1.5%;
   grid-column: 2;
-  grid-row: 4;
+  grid-row: 5;
   background-color:rgb(255, 255, 255);
   text-align: center;
   font-size: 80%;
@@ -67,7 +72,7 @@
  .article-resa7 {
   margin: 2% 1.5% 1.5% 3%;
   grid-column: 1;
-  grid-row: 5;
+  grid-row: 6;
   background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: 80%;
@@ -76,7 +81,7 @@
  .article-resa8 {
   margin: 2% 3% 1.5% 1.5%;
   grid-column: 2;
-  grid-row: 5;
+  grid-row: 6;
   background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: 80%;
@@ -85,7 +90,7 @@
  .article-resa9 {
   margin: 2% 1.5% 1.5% 3%;
   grid-column: 1;
-  grid-row: 6;
+  grid-row: 7;
   background-color:rgb(255, 255, 255);
   text-align: center;
   font-size: 80%;
@@ -96,7 +101,7 @@
  }
  .resa-text1 {
   text-align: left;
-  padding: 0% 3% 3% 3%;
+  padding: 0% 3% 3% 10%;
   grid-column: 1;
   font-size: 80%;
  }
@@ -104,14 +109,14 @@
   text-align: right;
   padding: 0% 3% 3% 3%;
   grid-column: 2;
-  font-size: 70%;
+  font-size: 80%;
  }
  .resa-text3 {
   text-align: right;
   padding: 0% 10% 3% 3%;
   grid-column: 3;
   color: red;
-  font-size: 70%;
+  font-size: 80%;
  }
  .resa-button {
   background-color:red;
@@ -126,7 +131,7 @@
  }
  .footer-resa {
   grid-column: 1/4;
-  grid-row: 7;
+  grid-row: 8;
   text-align: center;
   font-size: 80%;
   color: black;
@@ -149,6 +154,9 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
  }
+ .article-header {
+  display: none;
+  }
  .article-resa1 {
   grid-column: 1;
   grid-row: 2;
@@ -234,14 +242,14 @@
   text-align: right;
   padding: 0% 3% 3% 3%;
   grid-column: 2;
-  font-size: 70%;
+  font-size: 80%;
  }
  .resa-text3 {
   text-align: right;
   padding: 0% 10% 3% 3%;
   grid-column: 3;
   color: red;
-  font-size: 90%;
+  font-size: 80%;
  }
  .resa-button {
   background-color:red;
